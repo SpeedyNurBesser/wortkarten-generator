@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Oles Wortkarten-Generator</title>
+</head>
+<body>
+    <h1>Wortkarten-Generator</h1>
+
+    <input type="text" id="word_text" autofocus placeholder="Wort">
+
+    <br><br>
+
+    <textarea id="description_text" rows="4" cols="50" placeholder="Beschreibung"></textarea>
+
+    <br><br>
+
+    <input type="file" id="background_img_selection">
+
+    <img id="background_img" width="600" height="900" visibility: hidden>
+
+    <br><br>
+
+    <button id="generate_button">Generate</button> 
+    
+    <button id="download_button" style="visibility:hidden;">Download</button>
+
+    <br><br>
+
+    <canvas width="600" height="900" id="card_canvas" style="visibility: hidden;"></canvas>
+
+    <br><br>
+
+    <p>Wortkarten im Stile von <a href="https://www.sprachnudel.de/">Sprachnudel.de</a> für jedes Wort generieren. Bitte nicht hinterfragen, warum ich das brauche...</p>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+
+body {
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+}
+
+h1 {
+    font-size:x-large;
+}
+
+canvas {
+    border: 1px black solid;
+}
