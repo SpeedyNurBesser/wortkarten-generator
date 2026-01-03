@@ -48,7 +48,13 @@ function calcFrequency(word) {
         frequencyTotal += letterFrequencyTable[letter]
     });
 
-    return Math.round(frequencyTotal / countLetters(cleanedWord))
+    frequency = Math.round(frequencyTotal / countLetters(cleanedWord))
+
+    if (frequency) {
+      return frequency;
+    } else {
+      return 0
+    }
 }
 
 function countSyllables(word) {
@@ -68,7 +74,6 @@ function countSyllables(word) {
 
 function calcDifficulty(word) {
     // Complexity = Letters + 3 × (Syllables − 1)
-
     return countLetters(word) + 3 * countSyllables(word)
 }
 
